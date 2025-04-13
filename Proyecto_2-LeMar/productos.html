@@ -1,0 +1,119 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        
+
+        
+
+        <header class="cabecera">
+            <nav class="cabecera_menu">
+                <ul class="menu__opciones">
+                    <img src="./assets/img/Periplo_Logo.png" alt="" class="menu__opciones--logo">
+                    <li class="menu__opcion"  ><a href="index.html">Inicio 🌍</a></li>
+                    <li class="menu__opcion" ><a href="servicios.html">Nuestros servicios 🖌️</a></li>
+                    <li class="menu__opcion" ><a href="productos.html">Que el arte sea tuyo 🎨</a></li>
+                    <li class="menu__opcion" ><a href="contacto.html">Contacto✉️  </a></li>
+                    <li class="menu__opcion" ><a href="carrito.html"> Carrito  🛒 </a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section class="filtro_precio">
+            <h2>Filtrar por precio</h2>
+            <label for="precio_seleccion">Selecciona precio:</label>
+            <select id="precio_seleccion" name="precio_seleccion">
+                <option value="50">50€</option>
+                <option value="100" selected>100€</option>
+                <option value="500">500€</option>
+                <option value="1000000">1.000.000€</option>
+            </select>
+            <button id="aplicar_filtro">Aplicar Filtro</button>
+        </section>
+        
+
+
+
+            
+        <section class="producto">
+            <article class="producto__camiante">
+                <img src="./assets/img/caminante.JPG" alt="">
+                <p class="precio">50,00€</p>
+                <p class="nombre">Caminante</p>
+                <button data-id="1" data-nombre="Caminante" data-precio="50,00" data-imagen="./assets/img/caminante.JPG">Comprar</button>
+            </article>
+        
+
+            <article class="producto__donal">
+                <img src="./assets/img/donal.JPG" alt="">
+                <p class="precio">500,00€</p>
+                <p class="nombre">No Limites</p>
+                <button data-id="2" data-nombre="No Limites" data-precio="500,00" data-imagen="./assets/img/donal.JPG">Comprar</button>
+            </article>
+        
+
+            <article class="producto__estafa">
+                <img src="./assets/img/estafa.JPG" alt="">
+                <p class="precio">1.000.000€</p>
+                <p class="nombre">Estafa</p>
+                <button data-id="3" data-nombre="Estafa" data-precio="1.000.000" data-imagen="./assets/img/estafa.JPG">Comprar</button>
+            </article>
+
+
+            <article class="producto__tigre">
+                <img src="./assets/img/tigre.jpg" alt="">
+                <p class="precio">100,00€</p>
+                <p class="nombre">Tigre</p>
+                <button data-id="4" data-nombre="Tigre " data-precio="100,00" data-imagen="./assets/img/tigre.jpg">Comprar</button>
+            </article>
+
+
+            <article class="producto__raices">
+                <img src="./assets/img/pasion.avif" alt="">
+                <p class="precio">100,00€</p>
+                <p class="nombre">Raices</p>
+                <button data-id="5" data-nombre="Raices" data-precio="100,00" data-imagen="./assets/img/pasion.avif">Comprar</button>
+            </article>
+
+
+            <article class="producto__Flores">
+                <img src="./assets/img/flores.jpeg" alt="">
+                <p class="precio">50,00€</p>
+                <p class="nombre">Flores</p>
+                <button data-id="6" data-nombre="Flores" data-precio="50,00" data-imagen="./assets/img/flores.jpeg">Comprar</button>
+            </article>
+
+
+        </section>
+        
+
+
+
+
+
+            <!--Footer-->
+
+    <footer>
+        <nav class="footer" >
+          <p> 2025 NEMO (Red de Organizaciones de Museos Europeos) . Todos los derechos reservados.</p>
+            <ul class="elementos">
+              <li class="elemento_footer"><a href="#">Inicio</a></li>
+              <li class="elemento_footer"><a href="#">Sobre nosotros</a></li>
+              <li class="elemento_footer"><a href="#">Contacto</a></li>
+              <li class="elemento_footer"><a href="#">Política de privacidad</></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <script src="./js/script.js" ></script>
+</body>

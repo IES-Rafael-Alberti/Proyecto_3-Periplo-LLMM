@@ -1,0 +1,409 @@
+
+
+/*-------------variables----------*/
+:root{
+    --fuente__arial: "arial", serif;
+    --fuente__Times-New-Roman: "Times New Roman", serif; 
+        
+    --color__vinotinto: #892a26;
+    --color__blaco: #FDFFFC;   
+    --color__negro: #070707;
+    --color__amarillo:#AF9164; 
+}
+
+
+
+/*---------------cabecera Header-------------------*/
+.menu__opciones--logo{
+    width: 10rem;
+    height: 8rem;
+    object-fit: cover ;  /*centrar imagen*/
+    border-radius: 5rem;
+}
+
+
+.cabecera {
+    display: flex;   /* Asegura que los elementos dentro estén alineados en fila */
+    justify-content: center; /* Centra horizontalmente el contenido del header */
+    align-items: center;    /*Centra verticalmente el contenido del header */
+    background: var(--color__vinotinto);
+    width: 68rem;
+    height: 3rem;            
+    position: relative; 
+    top: 4rem;                 
+    left: 14rem;
+    border-radius: 1rem;       
+}
+
+.cabecera_menu {
+    display: flex;          /* Asegura que los elementos dentro estén alineados en fila */
+    justify-content: center; /* Centra los elementos del menú dentro de su contenedor */
+    align-items: center;
+    list-style: none;
+}
+
+.menu__opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem; /* Espaciado entre los elementos del menú */
+    padding: 0;
+    list-style: none;
+}
+
+
+.menu__opciones a {
+    font-family: 'Franklin Gothic Medium', ;
+    font-size: 20px;
+    color: var(--color__blaco);
+    text-decoration: none;
+    padding: 10px 15px; /*Ajusta el relleno*/
+    }
+
+.menu__opcion a:hover {
+    background: var(--color__blaco);
+    color: var(--color__negro);
+    border-radius: 5px; 
+}
+
+/*-----------------Bienvenida---------------------*/
+
+.bienvenida{                      
+    background-color: var(--color__blaco)
+    top: 9.5rem;    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size : 4rem;
+    padding: 3rem;
+    color: black;
+    justify-content: center; 
+
+}
+
+.bienvenida__texto{
+    justify-content: center;  
+    align-items: center; 
+    text-align: center; /*Centra texto verticalmente*/
+    padding: 1rem;
+    width: auto;
+    height: auto
+}
+
+/*-------------------cuadros_inicio-------------*/
+
+.cuadro {
+    display: flex; /* Asegura que las imágenes estén en fila horizontal */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    gap: 40px;    /* Espaciado entre las imágenes */
+}
+
+
+.imagen__arte {
+    width: 30rem; 
+    height: 30rem; 
+    object-fit: cover;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; /* Transiciones para hover */
+    
+}
+
+
+
+.imagen__arte:hover {transform: scale(1.2);}  /* Aumenta ligeramente el tamaño al pasar el cursor */
+
+/*---------------Servicios--------------*/
+.servicios {
+    padding: var(--color__amarillo);
+    display: flex;
+    flex-direction: column; /* Asegura que la imagen y el texto se coloquen en columna */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.imagen__alquiler{
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover; 
+    padding: 1rem;
+    background-color: gray;
+}
+
+.letra__servicios {
+    font-family: var(--fuente__Times-New-Roman);
+    font-size: 2.3rem;
+    text-align: center; /* Asegura que el texto se centre */
+}
+
+.descripcion{
+
+    font-size: 1.1rem;
+    max-width: 45rem; /* Evita que el texto sea demasiado ancho */
+    margin-bottom: 2rem; /* Añade espacio entre los elementos */
+    text-align: start;  /* para justificar texto*/ 
+}   
+
+/*--------------arte_tuyo-------productos--------------------*/
+
+/*FILTRO*/
+
+.filtro_precio {
+    padding: 4rem;
+    border-radius: 1rem;
+    width: auto;
+    font-family: sans-serif;
+}
+
+
+
+.filtro_precio select,
+.filtro_precio button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filtro_precio select {
+    background: var(--color__blaco);
+    color: var(--color__negro);
+    border: 1px solid var(--color__amarillo);
+}
+
+.filtro_precio button {
+    background: var(--color__amarillo);
+    color: var(--color__blaco);
+}
+
+.filtro_precio button:hover {
+    background: var(--color__negro);
+}
+
+
+/* Sección de productos */
+.producto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Aplicar fondo gris a todos los productos */
+.producto__item {
+    background-color: #d3d3d3; /* Gris claro */
+    padding: 20rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem; /* Mantiene un tamaño uniforme */
+}
+
+
+
+.producto img {
+    width: 30rem;  /* Ancho fijo */
+    height: 30rem; /* Alto fijo */
+    object-fit: cover; /* Mantiene la proporción y evita deformaciones */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 5rem;
+}
+
+
+/* Efecto hover en imágenes individuales */
+.producto img:hover {
+    transform: scale(1.2); /* Aplica el zoom solo a la imagen */
+}
+/* Estilos de precio y nombre */
+.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color__vinotinto);
+    margin-top: 0.5rem;
+    font-family: var(--fuente__Times-New-Roman)
+}
+
+.nombre {
+    font-size: 1.2rem;
+    font-family:var(--fuente__Times-New-Roman)
+    al, sans-serif;
+    color: var(--color__negro);
+    font-weight :bolder
+}
+
+/*------formulario-------*/
+
+.formulario {
+    background: var(--color__blaco); /* Fondo vinotinto */
+    color: var(--color__vinotinto); /* Texto en blanco */
+    padding: 3rem;
+    border-radius: 10px;
+    width: 35rem; /* Tamaño del formulario */
+    margin: 8rem auto; /* Centrar en la página */
+    box-shadow: 0px 4px 8px var(--color__vinotinto); /* Sombra para efecto flotante */
+    text-align: center;
+}
+
+/* Estilos para el título */
+.formulario h2 {
+    font-family: var(--fuente__Times-New-Roman);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos generales para etiquetas */
+.formulario label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+/* Estilos generales para inputs y textarea */
+.formulario input,
+
+.formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid var(--color__negro);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--color__blaco);
+    color: var(--color__negro);
+}
+
+/* Ajustes para textarea */
+.formulario textarea {
+    height: 100px;
+    resize: none;
+}
+
+/*Estilos para el botón */
+.formulario button {
+    margin-top: 1.5rem;
+    background-color: var(--color__amarillo);
+    color: var(--color__negro);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.formulario button:hover {
+    background-color: var(--color__negro);
+    color: var(--color__blaco);
+}
+
+
+
+
+/*footer*/ 
+
+
+.footer {
+    background-color: var(--color__vinotinto);
+    color: var(--color__blaco);
+    text-align: center;
+    display: flex;
+    margin-top : 6rem; 
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Esto separa el contenido del footer */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.elementos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem; /* Esto separa los elementos de la lista */
+}
+
+.elemento_footer {
+    display: inline-block;
+}
+
+.elemento_footer a {
+    color: var(--color__blaco);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.elemento_footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*carrito*/
+
+
+.carrito{
+    margin: 10rem;
+    color: var(--color__negro);
+    border-radius: 1rem;
+}
+
+#comprar{
+    color: var(--color__negro);
+    
+}
+
+
+
+/* Estilo de cada producto en el carrito */
+.producto-en-carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color__vinotinto)
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: var(--color__vinotinto);
+    width: auto ; 
+    text-align: center;
+}
+
+/* Estilo para la imagen dentro de cada producto */
+.producto-en-carrito img {
+    width: 20rem; /
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*fuentes*/
+.producto-en-carrito p{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color__amarillo);
+}
+
+/* Estilo para el botón de comprar */
+#comprar {
+    padding: 10px 20px;
+    background-color: var(--color__vinotinto);
+    border-radius: 5px;
+    font-size: 16px;
+    color : 
+}
+
+#comprar:hover {
+    background-color:var(--color__amarillo)
+}
+
+
